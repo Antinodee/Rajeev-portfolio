@@ -136,7 +136,7 @@ function Hero() {
         className="relative z-10 flex flex-col items-center text-center px-6 max-w-3xl mx-auto w-full"
       >
         {/* Availability badge */}
-        <motion.div variants={fadeUp} className="mb-7">
+        <motion.div variants={fadeUp} className="mb-4">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/30 bg-accent/5 font-mono text-accent text-xs tracking-wide backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
@@ -149,7 +149,7 @@ function Hero() {
         {/* Terminal breadcrumb */}
         <motion.div
           variants={fadeUp}
-          className="mb-5 flex items-center gap-2 font-mono text-text-muted text-xs"
+          className="mb-3 flex items-center gap-2 font-mono text-text-muted text-xs"
         >
           <Terminal size={11} className="text-accent/50" strokeWidth={1.5} />
           <span>unlv · cs_ms · data_science · ml_engineering</span>
@@ -179,7 +179,7 @@ function Hero() {
         {/* Role strip */}
         <motion.div
           variants={fadeUp}
-          className="mt-5 flex flex-wrap items-center justify-center gap-x-3 gap-y-1"
+          className="mt-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-1"
         >
           {['Data Scientist', 'ML Engineer', 'Software Engineer'].map((role, i) => (
             <span key={role} className="flex items-center gap-3">
@@ -202,7 +202,7 @@ function Hero() {
         {/* Tagline */}
         <motion.p
           variants={fadeUp}
-          className="mt-5 font-body text-text-primary text-base md:text-lg max-w-lg leading-relaxed opacity-80"
+          className="mt-3 font-body text-text-primary text-base md:text-lg max-w-lg leading-relaxed opacity-80"
         >
           From raw data to deployed products — I build the full pipeline.
         </motion.p>
@@ -210,7 +210,7 @@ function Hero() {
         {/* CTA buttons */}
         <motion.div
           variants={fadeUp}
-          className="mt-9 flex flex-wrap items-center justify-center gap-4"
+          className="mt-6 flex flex-wrap items-center justify-center gap-4"
         >
           <button
             onClick={() => scrollTo('projects')}
@@ -236,7 +236,7 @@ function Hero() {
         {/* Floating stat chips */}
         <motion.div
           variants={fadeUp}
-          className="mt-11 flex flex-wrap items-center justify-center gap-3"
+          className="mt-7 flex flex-wrap items-center justify-center gap-3"
         >
           {HERO_STATS.map(({ value, label, sub }, i) => (
             <motion.div
@@ -273,7 +273,7 @@ function Hero() {
         </motion.div>
 
         {/* Social links */}
-        <motion.div variants={fadeUp} className="mt-9 flex items-center gap-3">
+        <motion.div variants={fadeUp} className="mt-5 flex items-center gap-3">
           {SOCIALS.map(({ label, href, icon: Icon }) => (
             <a
               key={label}
