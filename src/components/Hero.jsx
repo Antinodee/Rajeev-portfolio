@@ -38,7 +38,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center overflow-hidden pt-16"
     >
       {/* ── Animated network canvas ─────────────────────────── */}
       <NetworkCanvas />
@@ -133,7 +133,7 @@ function Hero() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="relative z-10 flex flex-col items-center text-center px-6 max-w-3xl mx-auto w-full"
+        className="relative z-10 flex flex-col items-center text-center px-6 max-w-3xl mx-auto w-full my-auto py-6"
       >
         {/* Availability badge */}
         <motion.div variants={fadeUp} className="mb-4">
@@ -163,7 +163,7 @@ function Hero() {
         <motion.h1
           variants={fadeUp}
           className="font-display font-bold text-white leading-tight tracking-tight"
-          style={{ fontSize: 'clamp(2.8rem, 8vw, 5.5rem)' }}
+          style={{ fontSize: 'clamp(2.5rem, 7vw, 4.8rem)' }}
         >
           Rajeev{' '}
           <span
